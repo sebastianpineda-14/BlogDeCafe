@@ -68,5 +68,9 @@ img{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    
 } 
+header_texto{
+    text-align: center;
+    color:var(--blanco);
+    margin-top: 5rem;
+}
