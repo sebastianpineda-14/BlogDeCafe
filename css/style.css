@@ -26,8 +26,10 @@ body {
 /*GLOBALES*/
 
 .contenedor{
+    /** Mismo efecto, minimo 90% maximo 120rem
     max-width: 120rem;
-    width:90%;
+    width:90%;  **/
+    width: min(90%, 120rem);
     margin: 0 auto;
 }
 a {
@@ -76,6 +78,7 @@ img{
     color: var(--blanco);
     margin-top: 5rem;
 }
+
 @media (min-width: 768px){
     .header__texto{
         margin-top: 10rem;
@@ -89,7 +92,8 @@ img{
     }
 }
 .logo {
-    color: var(--blanco)
+    color: var(--blanco);
+    text-align: center;
 }
 .logo__nombre{
     font-weight: 400;
@@ -172,4 +176,13 @@ img{
 .widget-curso__label,
 .widget-curso__info{
     font-size: 2rem;
+}
+
+/** Footer **/
+
+.footer{
+    background-color: var(--negro);
+    width:100%;
+    margin-top: 2rem;
+    padding: 3rem 0;
 }
