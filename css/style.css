@@ -63,7 +63,9 @@ img{
 .no-padding{
     padding: 0;
 }
-
+.centrar-texto {
+    text-align: center;
+}
 /** Header **/ 
 
 .header{
@@ -101,11 +103,14 @@ img{
 .logo__bold{
     font-weight: 700;
 }
-
+.navegacion{
+    margin-bottom: 3rem;
+}
 @media (min-width: 768px){
     .navegacion{
         display: flex;
         gap: 2rem;
+        margin-bottom: 0rem;
     }    
 }
 .navegacion__enlace{
@@ -184,5 +189,21 @@ img{
     background-color: var(--negro);
     width:100%;
     margin-top: 2rem;
-    padding: 3rem 0;
+    padding: 1rem 0;
+}
+
+/** NOSOTROS **/
+.titulo{
+    margin-top: 3rem;
+}
+.contenido-principal--nosotros{
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+@media (min-width: 768px){
+    .contenido-principal--nosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3rem;
+    }
 }
