@@ -13,10 +13,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!--<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-
 <!--prefetch-->
 
     <link rel="prefetch" href="nosotros.html">
+
 <!--Preload-->
 
     <link rel="preload" href="./css/normalize.css" as="style">
@@ -50,28 +50,33 @@
         </div>
     
     </header>
-    <h3 class="no-margin centrar-texto titulo">Sobre Nosotros</h3>
-    <div class="contenedor contenido-principal--nosotros">
+
+    <main class="contenedor">
+        <h3 class="no-margin centrar-texto titulo">Contacto</h3>
         
-        <main class="nosotros__imagen">
-            <img src="./img/nosotros.jpg" alt="Nosotros.jpg">
+        <div class="contacto__background"></div>
 
-        </main>
-        <aside class="sidebar__nosotros">
-            <p class="justify no-margin">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque 
-                provident voluptas cum nisi ipsa fuga asperiores reprehenderit maiores dolore, 
-                consequatur nesciunt iusto illum culpa ratione, aliquid doloremque delectus necessitatibus laboriosam.
-                Exercitationem dolor pariatur quos iure sed saepe veritatis corporis architecto facere rem? Repellendus 
-                veritatis voluptates officiis debitis, quasi quia a corporis delectus est, saepe qui mollitia possimus eos? 
-                Ratione, dolorem?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque 
-                provident voluptas cum nisi ipsa fuga asperiores reprehenderit maiores dolore, 
-                consequatur nesciunt iusto illum culpa ratione, aliquid doloremque delectus necessitatibus laboriosam.
-                Exercitationem dolor pariatur quos iure sed saepe veritatis corporis architecto facere rem? Repellendus 
-                veritatis voluptates officiis debitis, quasi quia a corporis delectus est, saepe qui mollitia possimus eos? 
-                Ratione, dolorem?</p>
-        </aside>
-    </div>
+        <form class="formulario">
+            <div class="campo">
+                <label for="Name" class="campo__label">Nombre</label>
+                <input type="text" placeholder="Tu nombre" id="Name" class="campo__field">
+            </div>
+            <div class="campo">
+                <label for="email" class="campo__label">E-mail</label>
+                <input type="email" placeholder="Tu E-mail" id="email" class="campo__field">
+            </div>
+            <div class="campo">
+                <label for="mensaje" class="campo__label">Mensaje</label>
+                <textarea name="" id="mensaje" cols="40" rows="5" class="campo__field 
+                campo__field--textarea"></textarea>
+            </div>
+            <div class="campo">
+                <input type="submit" value="Enviar" class="boton boton--primario">
+            </div>
 
+        </form>
+    </main>
+    
     <footer class="footer">
 
         <div class="contenedor">
