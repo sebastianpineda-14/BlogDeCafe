@@ -31,7 +31,16 @@ body {
     width:90%;  **/
     width: min(90%, 120rem);
     margin: 0 auto;
+    margin-top: -3.2rem;
+    padding-top: 4rem;
 }
+@media (min-width: 768px){
+    .contenedor{
+        margin-top: 0rem;
+        padding-top: 0rem;
+    }
+}
+
 a {
     text-decoration: none;
 }
@@ -65,6 +74,9 @@ img{
 }
 .centrar-texto {
     text-align: center;
+}
+.justify {
+    text-align: justify;
 }
 /** Header **/ 
 
@@ -195,6 +207,7 @@ img{
 /** NOSOTROS **/
 .titulo{
     margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 .contenido-principal--nosotros{
     margin-top: 3rem;
@@ -203,7 +216,24 @@ img{
 @media (min-width: 768px){
     .contenido-principal--nosotros {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 3rem;
     }
+}
+
+/** Cursos **/ 
+
+.curso{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+@media (min-width: 768px){
+    .curso{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 3rem;
+    }
+}
+.curso:last-of-type{
+    border-bottom: none;
 }
